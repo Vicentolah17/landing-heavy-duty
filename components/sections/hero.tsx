@@ -75,7 +75,7 @@ export function Hero() {
               size="lg"
               className="bg-gold hover:bg-gold/90 text-primary-foreground font-heading text-lg md:text-xl px-8 py-6 h-auto rounded-lg shadow-lg shadow-gold/20 transition-all hover:shadow-xl hover:shadow-gold/30 hover:scale-105"
             >
-              <a href="#checkout">
+              <a href="https://pay.hotmart.com/M105294904O">
                 QUERO MEU TREINO HEAVY DUTY — R$37
               </a>
             </Button>

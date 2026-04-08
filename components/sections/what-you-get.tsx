@@ -50,49 +50,36 @@ export function WhatYouGet() {
         </h2>
 
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
-          {/* Features list */}
-          <div className="animate-on-scroll">
-            <ul className="space-y-5">
-              {features.map((feature, index) => (
-                <li key={index} className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-6 h-6 bg-gold/20 rounded-full flex items-center justify-center mt-0.5">
-                    <Check className="w-4 h-4 text-gold" />
-                  </div>
-                  <span className="text-foreground text-base md:text-lg leading-relaxed">
-                    {feature}
-                  </span>
-                </li>
-              ))}
-            </ul>
+  {/* Features list — mantém igual */}
+  <div className="animate-on-scroll">
+    <ul className="space-y-5">
+      {features.map((feature, index) => (
+        <li key={index} className="flex items-start gap-4">
+          <div className="flex-shrink-0 w-6 h-6 bg-gold/20 rounded-full flex items-center justify-center mt-0.5">
+            <Check className="w-4 h-4 text-gold" />
           </div>
+          <span className="text-foreground text-base md:text-lg leading-relaxed">
+            {feature}
+          </span>
+        </li>
+      ))}
+    </ul>
+  </div>
 
-          {/* Profile selector visual */}
-          <div className="animate-on-scroll" style={{ transitionDelay: '200ms' }}>
-            <div className="bg-card border border-gold/20 rounded-xl p-6 md:p-8">
-              <h3 className="font-heading text-lg md:text-xl font-bold text-gold mb-6 text-center">
-                6 Variações de Treino
-              </h3>
-              <div className="grid grid-cols-2 gap-3">
-                {profiles.map((profile, index) => (
-                  <div
-                    key={index}
-                    className="bg-background/50 border border-gold/10 rounded-lg p-3 md:p-4 text-center hover:border-gold/40 transition-colors"
-                  >
-                    <span className="block text-gold text-sm font-medium mb-1">
-                      {profile.level}
-                    </span>
-                    <span className="block text-foreground/80 text-xs md:text-sm">
-                      {profile.goal}
-                    </span>
-                  </div>
-                ))}
-              </div>
-              <p className="text-foreground/60 text-sm text-center mt-6">
-                Você recebe o plano certo para seu nível e objetivo
-              </p>
-            </div>
-          </div>
-        </div>
+  {/* Duas imagens lado a lado */}
+  <div className="animate-on-scroll grid grid-cols-2 gap-4 items-center" style={{ transitionDelay: '200ms' }}>
+    <img 
+      src="/media/preview.jpg"
+      alt="Sumário do programa"
+      className="rounded-xl shadow-2xl shadow-gold/20 w-full"
+    />
+    <img 
+      src="/media/outra-preview2.jpg"
+      alt="Preview do treino"
+      className="rounded-xl shadow-2xl shadow-gold/20 w-full"
+    />
+  </div>
+</div>
       </div>
     </section>
   )
