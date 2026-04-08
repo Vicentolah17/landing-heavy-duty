@@ -50,15 +50,14 @@ export function FinalCTA() {
 
         {/* CTA Button */}
         <div className="animate-on-scroll mb-6">
-          <Button
-            asChild
-            size="lg"
-            className="bg-gold hover:bg-gold/90 text-primary-foreground font-heading text-lg md:text-xl px-10 py-7 h-auto rounded-lg shadow-lg shadow-gold/30 transition-all hover:shadow-xl hover:shadow-gold/40 hover:scale-105"
-          >
-            <a href="#checkout">
+          <a 
+              href="https://pay.hotmart.com/M105294904O"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-gold hover:bg-gold/90 text-black font-heading text-lg md:text-xl px-10 py-5 rounded-lg shadow-lg shadow-gold/30 transition-all hover:shadow-xl hover:shadow-gold/40 hover:scale-105"
+            >
               GARANTIR MEU TREINO AGORA — R$37
-            </a>
-          </Button>
+          </a>
         </div>
 
         {/* Urgency text */}
