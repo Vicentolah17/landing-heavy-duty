@@ -1,0 +1,72 @@
+'use client'
+
+import { useEffect, useRef } from 'react'
+import { Button } from '@/components/ui/button'
+import { Zap } from 'lucide-react'
+
+export function FinalCTA() {
+  const sectionRef = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible')
+          }
+        })
+      },
+      { threshold: 0.1 }
+    )
+
+    const elements = sectionRef.current?.querySelectorAll('.animate-on-scroll')
+    elements?.forEach((el) => observer.observe(el))
+
+    return () => observer.disconnect()
+  }, [])
+
+  return (
+    <section
+      ref={sectionRef}
+      id="checkout"
+      className="py-20 md:py-28 bg-[#151515] noise-bg relative overflow-hidden"
+    >
+      {/* Background glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-gold/10 rounded-full blur-3xl" />
+      
+      {/* Gold gradient overlay at bottom */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gold/5 to-transparent pointer-events-none" />
+
+      <div className="relative z-10 container mx-auto px-4 max-w-3xl text-center">
+        {/* Title */}
+        <h2 className="animate-on-scroll font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+          Chega de treinar errado.
+        </h2>
+
+        {/* Subtext */}
+        <p className="animate-on-scroll text-foreground/80 text-lg md:text-xl mb-10 max-w-xl mx-auto">
+          R$37 por um método que atletas de elite pagaram fortunas pra aprender.
+        </p>
+
+        {/* CTA Button */}
+        <div className="animate-on-scroll mb-6">
+          <Button
+            asChild
+            size="lg"
+            className="bg-gold hover:bg-gold/90 text-primary-foreground font-heading text-lg md:text-xl px-10 py-7 h-auto rounded-lg shadow-lg shadow-gold/30 transition-all hover:shadow-xl hover:shadow-gold/40 hover:scale-105"
+          >
+            <a href="#checkout">
+              GARANTIR MEU TREINO AGORA — R$37
+            </a>
+          </Button>
+        </div>
+
+        {/* Urgency text */}
+        <p className="animate-on-scroll flex items-center justify-center gap-2 text-gold text-sm md:text-base font-medium">
+          <Zap className="w-4 h-4" />
+          Oferta de lançamento — vagas limitadas
+        </p>
+      </div>
+    </section>
+  )
+}
