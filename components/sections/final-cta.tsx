@@ -56,7 +56,7 @@ export function FinalCTA() {
               rel="noopener noreferrer"
               className="inline-block bg-gold hover:bg-gold/90 text-black font-heading text-lg md:text-xl px-10 py-5 rounded-lg shadow-lg shadow-gold/30 transition-all hover:shadow-xl hover:shadow-gold/40 hover:scale-105"
             >
-              GARANTIR MEU TREINO AGORA — R$37
+              QUERO MEU PROGRAMA AGORA
           </a>
         </div>
 
