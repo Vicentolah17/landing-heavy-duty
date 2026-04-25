@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react'
 import { Button } from '@/components/ui/button'
 import { Check } from 'lucide-react'
+import { HeavyDutyEvents } from '@/lib/meta-pixel'
 
 export function Hero() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -25,6 +26,10 @@ export function Hero() {
     return () => observer.disconnect()
   }, [])
 
+  const handleCheckoutClick = () => {
+    HeavyDutyEvents.initiateCheckout('hero')
+  }
+
   return (
     <section
       ref={sectionRef}
@@ -33,11 +38,9 @@ export function Hero() {
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#1C1C1C] via-[#1C1C1C] to-[#151515]" />
 
-      {/* Mentzer photo placeholder - Mobile: full background with overlay */}
+      {/* Mentzer photo placeholder */}
       <div className="mentzer-photo absolute inset-0 md:left-1/2 md:right-0 bg-gradient-to-r from-[#1C1C1C] via-[#1C1C1C]/80 to-transparent md:from-[#1C1C1C] md:via-transparent md:to-transparent z-[1]">
-        {/* Photo container - replace background-image in CSS with actual photo */}
         <div className="absolute inset-0 bg-[url('/media/mentzer7_hero.jpg')] bg-cover bg-center bg-no-repeat opacity-40 md:opacity-60" />
-        {/* Dark overlay for text readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#1C1C1C] via-[#1C1C1C]/90 to-[#1C1C1C]/40 md:from-[#1C1C1C] md:via-[#1C1C1C]/70 md:to-transparent" />
       </div>
 
@@ -75,7 +78,10 @@ export function Hero() {
               size="lg"
               className="bg-gold hover:bg-gold/90 text-primary-foreground font-heading text-lg md:text-xl px-8 py-6 h-auto rounded-lg shadow-lg shadow-gold/20 transition-all hover:shadow-xl hover:shadow-gold/30 hover:scale-105"
             >
-              <a href="https://pay.hotmart.com/M105294904O">
+              <a 
+                href="https://pay.hotmart.com/M105294904O"
+                onClick={handleCheckoutClick}
+              >
                 QUERO MEU PROGRAMA AGORA
               </a>
             </Button>

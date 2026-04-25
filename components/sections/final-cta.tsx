@@ -1,8 +1,8 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
-import { Button } from '@/components/ui/button'
 import { Zap } from 'lucide-react'
+import { HeavyDutyEvents } from '@/lib/meta-pixel'
 
 export function FinalCTA() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -24,6 +24,10 @@ export function FinalCTA() {
 
     return () => observer.disconnect()
   }, [])
+
+  const handleCheckoutClick = () => {
+    HeavyDutyEvents.initiateCheckout('final_cta')
+  }
 
   return (
     <section
@@ -54,6 +58,7 @@ export function FinalCTA() {
               href="https://pay.hotmart.com/M105294904O"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleCheckoutClick}
               className="inline-block bg-gold hover:bg-gold/90 text-black font-heading text-lg md:text-xl px-10 py-5 rounded-lg shadow-lg shadow-gold/30 transition-all hover:shadow-xl hover:shadow-gold/40 hover:scale-105"
             >
               QUERO MEU PROGRAMA AGORA
