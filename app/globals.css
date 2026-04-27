@@ -111,6 +111,22 @@
   background: #d4ad3a;
 }
 
+/* Quiz step transitions */
+@keyframes quiz-step-enter {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.quiz-step-enter {
+  animation: quiz-step-enter 0.35s ease-out both;
+}
+
 /* Gold gradient text */
 .text-gold-gradient {
   background: linear-gradient(135deg, #B8962E 0%, #d4ad3a 50%, #B8962E 100%);

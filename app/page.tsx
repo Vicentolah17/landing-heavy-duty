@@ -9,6 +9,7 @@ import { Guarantee } from '@/components/sections/guarantee'
 import { FAQ } from '@/components/sections/faq'
 import { FinalCTA } from '@/components/sections/final-cta'
 import { Footer } from '@/components/sections/footer'
+import Quiz from '@/components/Quiz'
 
 export default function HeavyDutyLanding() {
   return (
@@ -20,6 +21,7 @@ export default function HeavyDutyLanding() {
       <HowItWorks />
       <Quote />
       <ForWhom />
+      <Quiz />
       <Guarantee />
       <FAQ />
       <FinalCTA />

@@ -80,4 +80,42 @@ export const HeavyDutyEvents = {
       currency: 'BRL',
     })
   },
+
+  /**
+   * Disparar a cada pergunta respondida do quiz interativo.
+   * Usa Custom Event (não há equivalente padrão na lib do Meta).
+   */
+  quizStepCompleted: (
+    step_number: number,
+    total_steps: number,
+    step_name: string
+  ) => {
+    if (typeof window === 'undefined' || !window.fbq) return
+
+    const params = { step_number, total_steps, step_name }
+    window.fbq('trackCustom', 'QuizStepCompleted', params)
+
+    if (process.env.NODE_ENV === 'development') {
+      console.log('[Meta Pixel] QuizStepCompleted', params)
+    }
+  },
+
+  /**
+   * Disparar quando usuário finaliza o quiz e chega na tela de resultado.
+   * Usa o evento padrão `CompleteRegistration` (Meta otimiza melhor) e
+   * mantém os mesmos campos de produto pra atribuição de valor consistente
+   * com `initiateCheckout`/`viewContent`.
+   */
+  quizCompleted: (plan: string, level: string, goal: string) => {
+    trackPixelEvent('CompleteRegistration', {
+      content_name: 'Heavy Duty Method',
+      content_ids: ['heavy-duty-method'],
+      content_type: 'product',
+      value: 37.00,
+      currency: 'BRL',
+      plan,
+      level,
+      goal,
+    })
+  },
 }
