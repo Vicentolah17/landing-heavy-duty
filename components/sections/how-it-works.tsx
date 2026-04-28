@@ -5,15 +5,15 @@ import { useEffect, useRef } from 'react'
 const steps = [
   {
     number: '1',
-    text: 'Clique no botão e finalize o pagamento (R$37 — Pix ou cartão)',
+    text: 'Garanta seu acesso por R$ 37 (Pix ou cartão)',
   },
   {
     number: '2',
-    text: 'Responda 3 perguntas rápidas sobre seu perfil',
+    text: 'Responda o quiz rápido sobre seu nível e objetivo',
   },
   {
     number: '3',
-    text: 'Receba sua planilha personalizada em até 24h no seu email',
+    text: 'Receba o plano montado pro seu caso em até 24h por email',
   },
 ]
 

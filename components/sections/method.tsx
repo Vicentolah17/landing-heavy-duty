@@ -7,17 +7,17 @@ const principles = [
   {
     icon: Zap,
     title: 'INTENSIDADE',
-    description: '1 série levada à falha absoluta vale mais que 20 séries mediocres',
+    description: '1 série até a falha absoluta supera 20 séries mornas. \nHipertrofia responde ao estímulo máximo, não ao acumulado.',
   },
   {
     icon: Timer,
     title: 'DURAÇÃO',
-    description: 'Treinos de 10 a 30 minutos. Mais que isso é desperdício de recuperação',
+    description: 'Treinos de 30 a 45 minutos. \nMais que isso significa que a intensidade não foi alta o suficiente.',
   },
   {
     icon: CalendarDays,
     title: 'FREQUÊNCIA',
-    description: '4 a 7 dias de descanso entre treinos. O músculo cresce no descanso, não na academia',
+    description: '4 a 7 dias de descanso entre grupos musculares. \nO músculo cresce no descanso, não na academia.',
   },
 ]
 

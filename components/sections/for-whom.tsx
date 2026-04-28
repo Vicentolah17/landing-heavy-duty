@@ -4,11 +4,11 @@ import { useEffect, useRef } from 'react'
 import { Check } from 'lucide-react'
 
 const bullets = [
-  'Você treina 4-5x por semana e parou de crescer',
-  'Você é natural e cansou de seguir método de influencer',
-  'Você tem pouco tempo mas quer resultado real',
-  'Você quer um método com base científica, não achismo',
-  'Você está pronto para treinar com intensidade de verdade',
+  'Você treina há anos e o corpo parou de mudar',
+  'Você cansou de método genérico e quer base técnica',
+  'Você tem pouco tempo e precisa de treino que respeite isso',
+  'Você quer entender o porquê, não só seguir uma rotina',
+  'Você está disposto a treinar pesado de verdade — não muito',
 ]
 
 export function ForWhom() {

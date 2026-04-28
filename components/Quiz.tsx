@@ -388,11 +388,11 @@ function IntroCard({ onStart }: { onStart: () => void }) {
         id="quiz-heading"
         className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4"
       >
-        DESCUBRA QUAL DOS 6 PROGRAMAS É O SEU
+        DESCUBRA QUAL PROTOCOLO É O SEU
       </h2>
       <p className="text-foreground/80 text-base md:text-lg mb-8 max-w-lg mx-auto">
-        5 perguntas. 60 segundos. No final, você sabe exatamente qual planilha
-        Heavy Duty foi feita pro seu nível e objetivo.
+        Cinco perguntas sobre seu nível, seu objetivo e seu tempo disponível. 
+        Em 1 minuto, você tem clareza sobre qual protocolo aplicar.
       </p>
       <button
         type="button"
@@ -403,7 +403,8 @@ function IntroCard({ onStart }: { onStart: () => void }) {
         <ArrowRight className="w-5 h-5" />
       </button>
       <p className="text-foreground/50 text-xs md:text-sm mt-5">
-        Sem cadastro. Sem email. Resultado imediato.
+        Sem cadastro. Sem email. 
+        Você recebe o resultado na tela; o plano completo chega depois da compra.
       </p>
     </div>
   )

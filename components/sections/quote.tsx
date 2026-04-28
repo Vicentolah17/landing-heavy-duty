@@ -39,18 +39,20 @@ export function Quote() {
         {/* Quote */}
         <blockquote className="animate-on-scroll mb-8">
           <p className="font-heading text-xl md:text-2xl lg:text-3xl text-gold italic leading-relaxed text-balance">
-            &ldquo;A intensidade do esforço é o único fator responsável pelo estímulo do crescimento muscular.&rdquo;
+            &ldquo;O estímulo para o crescimento é breve e intenso. A recuperação é longa e indispensável.&rdquo;
           </p>
         </blockquote>
 
         {/* Attribution */}
         <p className="animate-on-scroll text-foreground font-heading text-lg md:text-xl font-medium mb-6">
-          — Mike Mentzer, Heavyweight Mr. Olympia 1979 · Revolucionário do Treinamento Científico
+          — Mike Mentzer
         </p>
 
         {/* Bio */}
         <p className="animate-on-scroll text-foreground/70 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
-          Mentzer foi o primeiro bodybuilder a aplicar ciência real ao treino. Obteve pontuação perfeita no Mr. Olympia Heavyweight em 1979 — e seus clientes cresciam mais treinando 1x por semana do que atletas que treinavam 6x.
+          Mr. Olympia Heavyweight em 1979 com pontuação perfeita.
+          Treinador de Dorian Yates — 6x Mr. Olympia consecutivo.
+          Defendeu, contra o consenso da indústria, que treinar menos com mais intensidade produz mais resultado.
         </p>
       </div>
     </section>

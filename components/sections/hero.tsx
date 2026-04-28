@@ -52,7 +52,7 @@ export function Hero() {
           {/* Badge */}
           <div className="animate-on-scroll mb-8">
             <span className="inline-block px-4 py-2 bg-gold/10 border border-gold/30 rounded-full text-gold text-sm font-medium tracking-wide">
-              O MÉTODO QUE A INDÚSTRIA DO FITNESS NÃO QUER QUE VOCÊ CONHEÇA
+              MÉTODO DE MIKE MENTZER — APLICADO AO SEU NÍVEL
             </span>
           </div>
 
@@ -63,13 +63,16 @@ export function Hero() {
 
           {/* H2 */}
           <h2 className="animate-on-scroll font-heading text-xl md:text-2xl lg:text-3xl text-gold mb-6 font-medium">
-            O Sistema Heavy Duty de Mike Mentzer — o único método de treino baseado em ciência real.
+            A maioria treina 5x por semana e estaciona.
+            <br />
+            Mentzer provou o porquê e como reverter.
           </h2>
 
           {/* Subtext */}
           <p className="animate-on-scroll text-foreground/80 text-base md:text-lg max-w-xl mb-10 leading-relaxed">
-            1 série. Falha muscular total. 4-7 dias de descanso. Resultados que a maioria nunca vai ter porque continua seguindo método errado.
-          </p>
+            1 série até a falha. 4 a 7 dias de descanso. Carga progressiva.
+            Plano montado pro seu nível e objetivo, em até 24h.          
+            </p>
 
           {/* CTA Button */}
           <div className="animate-on-scroll mb-6">
@@ -82,7 +85,7 @@ export function Hero() {
                 href="https://pay.hotmart.com/M105294904O"
                 onClick={handleCheckoutClick}
               >
-                QUERO MEU PROGRAMA AGORA
+                QUERO MEU PROGRAMA AGORA — R$ 37
               </a>
             </Button>
           </div>
@@ -91,15 +94,16 @@ export function Hero() {
           <div className="animate-on-scroll flex flex-wrap items-center gap-4 md:gap-6 text-sm text-foreground/70">
             <span className="flex items-center gap-2">
               <Check className="w-4 h-4 text-gold" />
-              Entrega em até 24h
-            </span>
-            <span className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-gold" />
-              Personalizado pro seu perfil
+              Plano personalizado em até 24h
             </span>
             <span className="flex items-center gap-2">
               <Check className="w-4 h-4 text-gold" />
               Baseado no livro original de Mentzer
+            </span>
+            <span className="flex items-center gap-2">
+              <Check className="w-4 h-4 text-gold" />
+              Garantia incondicional de 7 dias (Hotmart)
+              
             </span>
           </div>
         </div>

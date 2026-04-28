@@ -44,14 +44,16 @@ export function FinalCTA() {
       <div className="relative z-10 container mx-auto px-4 max-w-3xl text-center">
         {/* Title */}
         <h2 className="animate-on-scroll font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-          Chega de treinar errado.
+          Você já leu o suficiente.
         </h2>
 
         {/* Subtext */}
-        <p className="animate-on-scroll text-foreground/80 text-lg md:text-xl mb-10 max-w-xl mx-auto">
-          R$37 por um método que atletas de elite pagaram fortunas pra aprender.
+        <p className="text-foreground/80 text-lg md:text-xl mb-2 max-w-xl mx-auto">
+          Ou aplica o método e descobre o que mudou.
         </p>
-
+        <p className="text-foreground/80 text-lg md:text-xl mb-10 max-w-xl mx-auto">
+          Ou continua treinando do mesmo jeito.
+        </p>
         {/* CTA Button */}
         <div className="animate-on-scroll mb-6">
           <a 
@@ -61,14 +63,14 @@ export function FinalCTA() {
               onClick={handleCheckoutClick}
               className="inline-block bg-gold hover:bg-gold/90 text-black font-heading text-lg md:text-xl px-10 py-5 rounded-lg shadow-lg shadow-gold/30 transition-all hover:shadow-xl hover:shadow-gold/40 hover:scale-105"
             >
-              QUERO MEU PROGRAMA AGORA
+              COMEÇAR AGORA — R$ 37
           </a>
         </div>
 
-        {/* Urgency text */}
+        {/* Trust Line */}
         <p className="animate-on-scroll flex items-center justify-center gap-2 text-gold text-sm md:text-base font-medium">
           <Zap className="w-4 h-4" />
-          Oferta de lançamento — vagas limitadas
+          Pagamento via Hotmart · Garantia de 7 dias · Plano por email em até 24h
         </p>
       </div>
     </section>

@@ -18,8 +18,8 @@ export default function HeavyDutyLanding() {
       <Problem />
       <Method />
       <WhatYouGet />
-      <HowItWorks />
       <Quote />
+      <HowItWorks />
       <ForWhom />
       <Quiz />
       <Guarantee />

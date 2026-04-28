@@ -10,24 +10,32 @@ import {
 
 const faqs = [
   {
-    question: 'Isso funciona para iniciantes?',
-    answer: 'Sim, temos planos específicos para cada nível. Se você está começando, vai receber um treino adequado para o seu momento, com progressão gradual de intensidade.',
+    question: 'Por que treinar menos cresce mais?',
+    answer: 'Hipertrofia é uma resposta de adaptação. O músculo só cresce quando o estímulo ultrapassa o que ele já suporta — e isso só acontece em séries levadas à falha real. Treinar 5x por semana com séries moderadas mantém o corpo no esforço médio, abaixo do limite de adaptação. Treinar 2-3x com intensidade máxima cruza esse limite. Mentzer testou. Yates aplicou em 6 Mr. Olympia consecutivos.',
+  },
+  {
+    question: 'Como sei que vai funcionar pra mim?',
+    answer: 'Você não vai saber por garantia. Vai saber por aplicação. O método é o mesmo que o Mentzer aplicou no Mr. Olympia 1979 e o Yates aplicou em 6 títulos consecutivos. A ciência da hipertrofia confirma os princípios. Mas não vou prometer X kg em Y semanas — qualquer um que faz isso tá mentindo. O que prometo é o método estruturado, com progressão registrada. O resultado depende de você aplicar com a intensidade que o método exige.',
+  },
+  {
+    question: 'Já tentei outros métodos, por que esse seria diferente?',
+    answer: 'Porque a maioria dos outros métodos pede mais volume — mais séries, mais frequência, mais tempo na academia. Heavy Duty pede o oposto: menos volume, mais intensidade, mais descanso. Se você já fez bro split, ABC, ABCDE, push-pull-legs e estagnou, é provável que o problema não seja escolha de divisão, mas excesso de volume sem recuperação. O método ataca exatamente isso.',
+  },
+  {
+    question: 'Funciona pra iniciante?',
+    answer: 'Sim. O plano de iniciante começa com um break-in de duas semanas a 60% da carga, justamente pra adaptar tendões e articulações antes de levar uma série até a falha. A progressão é gradual e registrada. Se você treina há pouco tempo, o método te leva ao ponto de aplicar intensidade real sem se machucar.',
   },
   {
     question: 'Preciso de academia?',
-    answer: 'Sim, os exercícios utilizam equipamentos de academia como barras, halteres e máquinas. O método foi desenvolvido para ser aplicado em ambiente de academia.',
-  },
-  {
-    question: 'Como recebo minha planilha?',
-    answer: 'Por email em até 24 horas após o pagamento. Você responde 3 perguntas rápidas e recebe o plano personalizado diretamente na sua caixa de entrada.',
+    answer: 'Sim. Os exercícios usam barras, halteres e máquinas — o método foi desenhado pra ambiente de academia. Não é treino de casa.',
   },
   {
     question: 'É realmente personalizado?',
-    answer: 'Sim, baseado nas suas respostas você recebe o plano certo pro seu perfil e objetivo. São 6 variações diferentes (Iniciante/Intermediário/Avançado × Massa/Força).',
+    answer: 'Sim. Você responde um quiz curto sobre seu nível e objetivo, e eu monto o plano usando o protocolo que faz sentido pro seu caso. A entrega é por email em até 24h após o pagamento.',
   },
   {
-    question: 'Por que só R$37?',
-    answer: 'Porque o objetivo é validar o método e ajudar o máximo de pessoas possível a treinar de forma inteligente. O preço sobe em breve.',
+    question: 'Por que custa R$ 37?',
+    answer: 'Porque é a fase de validação do método. O preço baixo é pra remover barreira de entrada, não porque o conteúdo seja genérico. O PDF tem 12 páginas estruturadas, com aquecimento, divisão semanal, técnicas avançadas (pré-exaustão, cadência 4s/2s/4s), tabela de progressão e regras claras.',
   },
 ]
 
