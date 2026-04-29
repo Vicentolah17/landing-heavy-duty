@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     description: 'O Sistema Heavy Duty de Mike Mentzer — o único método de treino baseado em ciência real.',
     type: 'website',
   },
+  other: {
+    'facebook-domain-verification': 'dlwh1z0e0zjiu9b7rddwrc10mix3gh',
+  },
 }
 
 export const viewport: Viewport = {
