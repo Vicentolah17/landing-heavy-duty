@@ -25,9 +25,6 @@ export const metadata: Metadata = {
     description: 'O Sistema Heavy Duty de Mike Mentzer — o único método de treino baseado em ciência real.',
     type: 'website',
   },
-  other: {
-    'facebook-domain-verification': 'dlwh1z0e0zjiu9b7rddwrc10mix3gh',
-  },
 }
 
 export const viewport: Viewport = {
@@ -44,6 +41,9 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={`${bebasNeue.variable} ${inter.variable} scroll-smooth`}>
       <head>
+        {/* Facebook Domain Verification */}
+        <meta name="facebook-domain-verification" content="dlwh1z0e0zjiu9b7rddwrc10mix3gh" />
+
         {/* Google Analytics 4 */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-2JEK8J9610"
