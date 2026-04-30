@@ -17,7 +17,7 @@ const principles = [
   {
     icon: CalendarDays,
     title: 'FREQUÊNCIA',
-    description: '4 a 7 dias de descanso entre grupos musculares. \nO músculo cresce no descanso, não na academia.',
+    description: '4 a 7 dias de descanso entre cada sessão de treino. \nO músculo cresce no descanso, não na academia.',
   },
 ]
 
