@@ -5,11 +5,11 @@ import { Check } from 'lucide-react'
 
 const features = [
   'Plano montado pro seu nível e objetivo',
+  'Técnica de pré-exaustão aplicada — isolação seguida de composto, sem descanso',
+  'Protocolo de break-in nas semanas 1-2 (adaptação de tendões antes da falha)',
   'Divisão semanal estruturada (Treino A / Treino B alternados)',
   'Exercícios com séries, reps, cargas e cadência (4s/2s/4s)',
-  'Técnica de pré-exaustão aplicada — isolação seguida de composto, sem descanso',
   'Tabela de progressão de carga e regras de avanço',
-  'Protocolo de break-in nas semanas 1-2 (adaptação de tendões antes da falha)',
   'Página dedicada de aquecimento obrigatório',
   'Os princípios do Heavy Duty explicados em linguagem aplicada',
   'Entrega em até 24h após o quiz ou formulário',

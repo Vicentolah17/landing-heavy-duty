@@ -35,7 +35,7 @@ export function Guarantee() {
 
           {/* Title */}
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            GARANTIA INCONDICIONAL DE 7 DIAS
+            GARANTIA TOTAL DE 7 DIAS PELA HOTMART
           </h2>
 
           {/* Subtext */}

@@ -62,17 +62,19 @@ export function Hero() {
           </h1>
 
           {/* H2 */}
-          <h2 className="animate-on-scroll font-heading text-xl md:text-2xl lg:text-3xl text-gold mb-6 font-medium">
-            A maioria treina 5x por semana e estaciona.
-            <br />
-            Mentzer provou o porquê e como reverter.
-          </h2>
+         <h2 className="animate-on-scroll font-heading text-xl md:text-2xl lg:text-3xl text-gold font-medium mb-3">
+              A maioria treina 5x por semana e estaciona.
+            </h2>
+
+            <h2 className="animate-on-scroll font-heading text-xl md:text-2xl lg:text-3xl text-gold font-medium">
+              Mentzer provou o porquê e como reverter.
+            </h2>
 
           {/* Subtext */}
-          <p className="animate-on-scroll text-foreground/80 text-base md:text-lg max-w-xl mb-10 leading-relaxed">
-            1 série até a falha. 4 a 7 dias de descanso. Carga progressiva.
+          <p className="animate-on-scroll text-foreground/80 text-base md:text-lg max-w-xl mb-10 mt-5 leading-relaxed">
+            1 série até a falha. 4 a 7 dias de descanso. Progressão de carga.
             Plano montado pro seu nível e objetivo, em até 24h.          
-            </p>
+          </p>
 
           {/* CTA Button */}
           <div className="animate-on-scroll mb-6">

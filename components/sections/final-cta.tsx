@@ -67,11 +67,18 @@ export function FinalCTA() {
           </a>
         </div>
 
-        {/* Trust Line */}
-        <p className="animate-on-scroll flex items-center justify-center gap-2 text-gold text-sm md:text-base font-medium">
-          <Zap className="w-4 h-4" />
-          Pagamento via Hotmart · Garantia de 7 dias · Plano por email em até 24h
-        </p>
+       {/* Trust line */}
+<p className="animate-on-scroll text-gold text-sm md:text-base font-medium mb-3">
+  Pagamento via Hotmart · Garantia de 7 dias
+</p>
+
+{/* Process explanation */}
+<p className="animate-on-scroll text-foreground/70 text-sm md:text-base max-w-md mx-auto leading-relaxed">
+  Após a compra, você responde um formulário rápido por email.
+  Seu plano será montado e entregue em até 24h.
+</p>
+
+
       </div>
     </section>
   )

@@ -43,9 +43,14 @@ export function Problem() {
     <section ref={sectionRef} className="py-20 md:py-28 bg-[#151515] noise-bg relative">
       <div className="container mx-auto px-4 max-w-5xl">
         {/* Title */}
-        <h2 className="animate-on-scroll font-heading text-2xl md:text-4xl lg:text-5xl font-bold text-foreground text-center mb-12 md:mb-16 leading-tight text-balance">
-          Você treina 5x por semana há anos.{' '}
-          <span className="text-gold">O problema não é você — é o método.</span>
+        <h2 className="animate-on-scroll font-heading text-2xl md:text-4xl lg:text-5xl font-bold text-foreground text-center mb-12 md:mb-16 leading-tight">
+          <span className="block md:whitespace-nowrap">
+            Você treina há anos. O corpo parou de mudar.
+          </span>
+
+          <span className="block text-gold">
+            O problema não é você — é o método.
+          </span>
         </h2>
 
         {/* Pain points grid */}
