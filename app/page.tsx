@@ -16,13 +16,12 @@ export default function HeavyDutyLanding() {
     <main className="min-h-screen">
       <Hero />
       <Problem />
-      <Method />
-      <WhatYouGet />
       <Quote />
-      <HowItWorks />
+      <Method />
       <ForWhom />
-      <Quiz />
+      <WhatYouGet />
       <Guarantee />
+      <HowItWorks />
       <FAQ />
       <FinalCTA />
       <Footer />

@@ -36,12 +36,12 @@ export function Hero() {
       className="relative min-h-screen flex items-center noise-bg overflow-hidden"
     >
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#1C1C1C] via-[#1C1C1C] to-[#151515]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#000000] via-[#000000] to-[#0A0A0A]" />
 
-      {/* Mentzer photo placeholder */}
-      <div className="mentzer-photo absolute inset-0 md:left-1/2 md:right-0 bg-gradient-to-r from-[#1C1C1C] via-[#1C1C1C]/80 to-transparent md:from-[#1C1C1C] md:via-transparent md:to-transparent z-[1]">
-        <div className="absolute inset-0 bg-[url('/media/mentzer7_hero.jpg')] bg-cover bg-center bg-no-repeat opacity-40 md:opacity-60" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1C1C1C] via-[#1C1C1C]/90 to-[#1C1C1C]/40 md:from-[#1C1C1C] md:via-[#1C1C1C]/70 md:to-transparent" />
+      {/* Hero photo — golden era B&W (não identificável como Mentzer) */}
+      <div className="absolute inset-0 md:left-1/2 md:right-0 bg-gradient-to-r from-[#000000] via-[#000000]/80 to-transparent md:from-[#000000] md:via-transparent md:to-transparent z-[1]">
+        <div className="absolute inset-0 bg-[url('/media/golden_era_bd.png')] bg-cover bg-center bg-no-repeat opacity-40 md:opacity-60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#000000] via-[#000000]/90 to-[#000000]/40 md:from-[#000000] md:via-[#000000]/70 md:to-transparent" />
       </div>
 
       {/* Subtle radial glow */}
@@ -51,31 +51,38 @@ export function Hero() {
         <div className="max-w-2xl">
           {/* Badge */}
           <div className="animate-on-scroll mb-8">
-            <span className="inline-block px-4 py-2 bg-gold/10 border border-gold/30 rounded-full text-gold text-sm font-medium tracking-wide">
-              MÉTODO DE MIKE MENTZER — APLICADO AO SEU NÍVEL
+            <span className="inline-block px-4 py-2 bg-gold/10 border border-gold/30 rounded-full text-gold text-sm font-medium tracking-[0.2em]">
+              PROTOCOLO BRUTO
             </span>
           </div>
 
           {/* H1 */}
-          <h1 className="animate-on-scroll font-heading text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 tracking-tight text-balance">
-            Treine Menos. Cresça Mais.
+          <h1 className="animate-on-scroll font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-8 tracking-tight text-balance leading-[1.05]">
+            Você treina há 15 anos.
+            <br />
+            Se acaba na academia.
+            <br />
+            <span className="text-gold">Por que o corpo parou de mudar?</span>
           </h1>
 
-          {/* H2 */}
-          <h2 className="animate-on-scroll font-heading text-xl md:text-2xl lg:text-3xl text-gold mb-6 font-medium">
-            A maioria treina 5x por semana e estaciona.
+          {/* H2 — promessa em destaque */}
+          <h2 className="animate-on-scroll font-heading text-xl md:text-2xl lg:text-3xl text-foreground mb-8 font-medium leading-snug">
+            3 treinos por semana. 30 minutos.
             <br />
-            Mentzer provou o porquê e como reverter.
+            Até a falha. 4 a 7 dias de descanso.
           </h2>
 
           {/* Subtext */}
-          <p className="animate-on-scroll text-foreground/80 text-base md:text-lg max-w-xl mb-10 leading-relaxed">
-            1 série até a falha. 4 a 7 dias de descanso. Carga progressiva.
-            Plano montado pro seu nível e objetivo, em até 24h.          
-            </p>
+          <p className="animate-on-scroll text-foreground/80 text-base md:text-lg max-w-xl mb-10 leading-relaxed space-y-2">
+            A geração que construiu o fisiculturismo nos anos 80 já tinha a resposta.
+            A indústria do fitness te empurrou volume pra te manter pagando academia.
+            <br />
+            <br />
+            Protocolo BRUTO é a interpretação brasileira desses princípios — pro homem 40+ que não tem mais tempo a perder com treino que não funciona.
+          </p>
 
           {/* CTA Button */}
-          <div className="animate-on-scroll mb-6">
+          <div className="animate-on-scroll mb-4">
             <Button
               asChild
               size="lg"
@@ -85,25 +92,29 @@ export function Hero() {
                 href="https://pay.hotmart.com/M105294904O"
                 onClick={handleCheckoutClick}
               >
-                QUERO MEU PROGRAMA AGORA — R$ 37
+                COMEÇAR O PROTOCOLO — R$ 37
               </a>
             </Button>
           </div>
 
+          {/* Microcopy abaixo do CTA */}
+          <p className="animate-on-scroll text-foreground/60 text-sm md:text-base max-w-md mb-8 leading-relaxed">
+            Após a compra, você responde um formulário rápido por email. Montamos seu plano e enviamos direto pra você
+          </p>
+
           {/* Trust badges */}
-          <div className="animate-on-scroll flex flex-wrap items-center gap-4 md:gap-6 text-sm text-foreground/70">
-            <span className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-gold" />
-              Plano personalizado em até 24h
+          <div className="animate-on-scroll flex flex-col gap-3 text-sm text-foreground/70">
+            <span className="flex items-start gap-2">
+              <Check className="w-4 h-4 text-gold flex-shrink-0 mt-0.5" />
+              Garantia de 7 dias pela Hotmart
             </span>
-            <span className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-gold" />
-              Baseado no livro original de Mentzer
+            <span className="flex items-start gap-2">
+              <Check className="w-4 h-4 text-gold flex-shrink-0 mt-0.5" />
+              Plano em até 24h
             </span>
-            <span className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-gold" />
-              Garantia incondicional de 7 dias (Hotmart)
-              
+            <span className="flex items-start gap-2">
+              <Check className="w-4 h-4 text-gold flex-shrink-0 mt-0.5" />
+              Inspirado nos princípios de Mike Mentzer e da golden era
             </span>
           </div>
         </div>

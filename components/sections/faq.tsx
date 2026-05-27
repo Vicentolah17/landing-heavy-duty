@@ -11,31 +11,27 @@ import {
 const faqs = [
   {
     question: 'Por que treinar menos cresce mais?',
-    answer: 'Hipertrofia é uma resposta de adaptação. O músculo só cresce quando o estímulo ultrapassa o que ele já suporta — e isso só acontece em séries levadas à falha real. Treinar 5x por semana com séries moderadas mantém o corpo no esforço médio, abaixo do limite de adaptação. Treinar 2-3x com intensidade máxima cruza esse limite. Mentzer testou. Yates aplicou em 6 Mr. Olympia consecutivos.',
+    answer: 'Hipertrofia responde a estímulo máximo, não ao volume acumulado. Vinte séries mornas não cruzam o limite de adaptação — uma série até a falha cruza. O resto da semana é pra recuperação, que é quando o músculo de fato cresce.',
+  },
+  {
+    question: 'Treinei pesado a vida toda. Vou conseguir aos 50?',
+    answer: 'Sim, e provavelmente com mais facilidade do que aos 25. O método tem duas semanas de break-in a 60% da carga pra adaptar tendões e articulações antes da intensidade total. Você não começa na falha — você prepara o corpo pra ela.',
   },
   {
     question: 'Como sei que vai funcionar pra mim?',
-    answer: 'Você não vai saber por garantia. Vai saber por aplicação. O método é o mesmo que o Mentzer aplicou no Mr. Olympia 1979 e o Yates aplicou em 6 títulos consecutivos. A ciência da hipertrofia confirma os princípios. Mas não vou prometer X kg em Y semanas — qualquer um que faz isso tá mentindo. O que prometo é o método estruturado, com progressão registrada. O resultado depende de você aplicar com a intensidade que o método exige.',
-  },
-  {
-    question: 'Já tentei outros métodos, por que esse seria diferente?',
-    answer: 'Porque a maioria dos outros métodos pede mais volume — mais séries, mais frequência, mais tempo na academia. Heavy Duty pede o oposto: menos volume, mais intensidade, mais descanso. Se você já fez bro split, ABC, ABCDE, push-pull-legs e estagnou, é provável que o problema não seja escolha de divisão, mas excesso de volume sem recuperação. O método ataca exatamente isso.',
-  },
-  {
-    question: 'Funciona pra iniciante?',
-    answer: 'Sim. O plano de iniciante começa com um break-in de duas semanas a 60% da carga, justamente pra adaptar tendões e articulações antes de levar uma série até a falha. A progressão é gradual e registrada. Se você treina há pouco tempo, o método te leva ao ponto de aplicar intensidade real sem se machucar.',
+    answer: 'Não vai saber por garantia. Vai saber por aplicação. Os princípios que sustentam o Protocolo BRUTO foram aplicados por campeões da golden era e estão hoje validados pela ciência da hipertrofia. O resultado depende de você aplicar com a intensidade que o método exige.',
   },
   {
     question: 'Preciso de academia?',
-    answer: 'Sim. Os exercícios usam barras, halteres e máquinas — o método foi desenhado pra ambiente de academia. Não é treino de casa.',
+    answer: 'Sim. Os exercícios usam barras, halteres e máquinas — método feito pra academia. Não é treino de casa.',
   },
   {
-    question: 'É realmente personalizado?',
-    answer: 'Sim. Você responde um quiz curto sobre seu nível e objetivo, e eu monto o plano usando o protocolo que faz sentido pro seu caso. A entrega é por email em até 24h após o pagamento.',
+    question: 'Como recebo o protocolo?',
+    answer: 'Após a compra, você responde um formulário curto que chega no seu email. Em até 24h, eu monto seu plano e envio. Sem cadastro, sem app.',
   },
   {
     question: 'Por que custa R$ 37?',
-    answer: 'Porque é a fase de validação do método. O preço baixo é pra remover barreira de entrada, não porque o conteúdo seja genérico. O PDF tem 12 páginas estruturadas, com aquecimento, divisão semanal, técnicas avançadas (pré-exaustão, cadência 4s/2s/4s), tabela de progressão e regras claras.',
+    answer: 'Porque é a fase de validação do método no Brasil. O preço baixo é pra remover barreira de entrada — não porque o conteúdo seja genérico. O PDF é estruturado, com aquecimento dedicado, técnica detalhada, progressão registrada e regras claras.',
   },
 ]
 
@@ -61,21 +57,22 @@ export function FAQ() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="py-20 md:py-28 bg-background noise-bg relative">
+    <section ref={sectionRef} className="py-20 md:py-24 bg-background noise-bg relative">
       <div className="container mx-auto px-4 max-w-3xl">
-        {/* Title */}
-        <h2 className="animate-on-scroll font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground text-center mb-12 md:mb-16">
-          Perguntas frequentes
+        {/* H2 */}
+        <h2 className="animate-on-scroll font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground text-center mb-10 md:mb-14 leading-tight">
+          Perguntas{' '}
+          <span className="text-gold">frequentes.</span>
         </h2>
 
         {/* Accordion */}
         <div className="animate-on-scroll">
-          <Accordion type="single" collapsible className="space-y-4">
+          <Accordion type="single" collapsible className="space-y-3 md:space-y-4">
             {faqs.map((faq, index) => (
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="bg-card border border-gold/20 rounded-lg px-6 data-[state=open]:border-gold/40"
+                className="bg-card border border-gold/20 rounded-lg px-5 md:px-6 data-[state=open]:border-gold/40 transition-colors"
               >
                 <AccordionTrigger className="text-left font-heading text-base md:text-lg font-medium text-foreground hover:text-gold hover:no-underline py-5">
                   {faq.question}
