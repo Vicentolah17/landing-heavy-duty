@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
+import Image from 'next/image'
 import { Check } from 'lucide-react'
 
 const features = [
@@ -63,6 +64,86 @@ export function WhatYouGet() {
               </li>
             ))}
           </ul>
+        </div>
+
+        {/* Preview spread */}
+        <div className="animate-on-scroll mb-16">
+          {/* Label */}
+          <p className="text-center text-gold text-xs tracking-[0.25em] uppercase font-semibold mb-3">
+            Veja por dentro
+          </p>
+          <p className="text-center text-foreground/60 text-sm mb-10 leading-relaxed">
+            Não é imagem genérica. É a planilha real que chega no seu email.
+          </p>
+
+          {/* Spread de imagens */}
+          <div className="relative flex items-end justify-center gap-0 px-4 md:px-0">
+
+            {/* Esquerda — Sumário */}
+            <div
+              className="relative w-[30%] max-w-[160px] flex-shrink-0 -rotate-6 translate-y-4 z-10
+                         drop-shadow-[0_20px_40px_rgba(0,0,0,0.8)]
+                         transition-transform duration-300 hover:-rotate-3 hover:translate-y-1 hover:z-30"
+            >
+              <div className="rounded-lg overflow-hidden border border-white/8 ring-1 ring-black/40">
+                <Image
+                  src="/media/preview_nova1.png"
+                  alt="Sumário do protocolo"
+                  width={420}
+                  height={672}
+                  className="w-full h-auto"
+                  quality={90}
+                />
+              </div>
+            </div>
+
+            {/* Centro — Treino A (destaque) */}
+            <div
+              className="relative w-[40%] max-w-[220px] flex-shrink-0 z-20 -mx-4 md:-mx-6
+                         drop-shadow-[0_28px_50px_rgba(184,150,46,0.18)]
+                         transition-transform duration-300 hover:scale-[1.03] hover:z-30"
+            >
+              {/* Badge no topo */}
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-30 bg-gold px-3 py-1 rounded-full">
+                <span className="text-black text-[10px] font-bold tracking-widest uppercase whitespace-nowrap">
+                  Nível de detalhe
+                </span>
+              </div>
+              <div className="rounded-lg overflow-hidden border border-gold/30 ring-1 ring-gold/10">
+                <Image
+                  src="/media/preview_nova3.png"
+                  alt="Sessão de treino detalhada"
+                  width={420}
+                  height={672}
+                  className="w-full h-auto"
+                  quality={90}
+                />
+              </div>
+            </div>
+
+            {/* Direita — Boas-vindas */}
+            <div
+              className="relative w-[30%] max-w-[160px] flex-shrink-0 rotate-6 translate-y-4 z-10
+                         drop-shadow-[0_20px_40px_rgba(0,0,0,0.8)]
+                         transition-transform duration-300 hover:rotate-3 hover:translate-y-1 hover:z-30"
+            >
+              <div className="rounded-lg overflow-hidden border border-white/8 ring-1 ring-black/40">
+                <Image
+                  src="/media/preview_nova2.png"
+                  alt="Boas-vindas e introdução"
+                  width={420}
+                  height={672}
+                  className="w-full h-auto"
+                  quality={90}
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Caption discreta */}
+          <p className="text-center text-foreground/35 text-xs mt-8 tracking-wide">
+            Exercícios · Séries · Reps · Carga · Progressão semana a semana
+          </p>
         </div>
 
         {/* Bloco de entrega */}

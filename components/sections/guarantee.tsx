@@ -25,7 +25,7 @@ export function Guarantee() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="py-20 md:py-28 bg-[#1A1A1A] noise-bg relative">
+    <section ref={sectionRef} className="py-20 md:py-28 bg-[#0A0A0A] noise-bg relative">
       <div className="container mx-auto px-4 max-w-3xl">
         <div className="animate-on-scroll border border-gold/30 rounded-2xl p-8 md:p-14 text-center bg-background/30">
           {/* Shield icon */}

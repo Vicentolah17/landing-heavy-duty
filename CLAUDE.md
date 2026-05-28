@@ -6,6 +6,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## REGRAS OBRIGATÓRIAS DE TRABALHO
 
+0. Na primeira ação de qualquer sessão, rode `pwd` e me informe a CWD.
+Se a CWD contiver ".claude/worktrees/", PARE, avise, e não execute nada até eu autorizar.
 1. NUNCA crie git worktrees. Trabalhe SEMPRE direto no diretório principal.
 2. NUNCA execute git commit automaticamente.
 3. NUNCA execute git push automaticamente.

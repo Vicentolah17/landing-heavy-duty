@@ -33,7 +33,7 @@ export function ForWhom() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="py-20 md:py-28 bg-[#151515] noise-bg relative">
+    <section ref={sectionRef} className="py-20 md:py-28 bg-[#000000] noise-bg relative">
       <div className="container mx-auto px-4 max-w-3xl">
         {/* Title */}
         <h2 className="animate-on-scroll font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-gold text-center mb-12 md:mb-16">

@@ -74,7 +74,7 @@ export function FinalCTA() {
         <p className="animate-on-scroll text-foreground/60 text-sm md:text-base max-w-md mx-auto leading-relaxed">
           Após a compra, você responde um formulário curto por email.
           <br />
-          Em até 24h, eu envio seu protocolo montado.
+          Em até 24h, enviamos seu protocolo montado.
         </p>
       </div>
     </section>
