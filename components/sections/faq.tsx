@@ -18,6 +18,10 @@ const faqs = [
     answer: 'Sim, e provavelmente com mais facilidade do que aos 25. O método tem duas semanas de break-in a 60% da carga pra adaptar tendões e articulações antes da intensidade total. Você não começa na falha — você prepara o corpo pra ela.',
   },
   {
+    question: 'Como sei qual dos 6 protocolos começar?',
+    answer: 'Cada protocolo é nomeado pelo nível e objetivo (T1 — Iniciante/Massa até T6 — Avançado/Força). Se você está voltando depois de tempo parado, começa pelo T1 ou T2. Se já treina há anos com base, vai direto pro T3 ou T4. As progressões T5 e T6 são pra quem já dominou as fases anteriores. Você nunca fica preso: conforme dominar uma fase, sobe pra próxima.',
+  },
+  {
     question: 'Como sei que vai funcionar pra mim?',
     answer: 'Não vai saber por garantia. Vai saber por aplicação. Os princípios que sustentam o Protocolo BRUTO foram aplicados por campeões da golden era e estão hoje validados pela ciência da hipertrofia. O resultado depende de você aplicar com a intensidade que o método exige.',
   },
@@ -26,8 +30,8 @@ const faqs = [
     answer: 'Sim. Os exercícios usam barras, halteres e máquinas — método feito pra academia. Não é treino de casa.',
   },
   {
-    question: 'Como recebo o protocolo?',
-    answer: 'Após a compra, você responde um formulário curto que chega no seu email. Em até 24h, eu monto seu plano e envio. Sem cadastro, sem app.',
+    question: 'Como recebo o método?',
+    answer: 'Acesso imediato após a compra. Tudo fica liberado na sua área de membros Hotmart — os 6 protocolos progressivos, o aquecimento, a tabela de progressão. Sem espera, sem etapa intermediária.',
   },
   {
     question: 'Por que custa R$ 37?',

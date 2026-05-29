@@ -9,11 +9,11 @@ const steps = [
   },
   {
     number: '2',
-    text: 'Responde o formulário curto que chega no seu email.',
+    text: 'Acesso imediato à biblioteca completa na área de membros.',
   },
   {
     number: '3',
-    text: 'Em até 24h, eu envio seu protocolo montado.',
+    text: 'Você escolhe o protocolo certo pro seu momento e começa a treinar.',
   },
 ]
 
@@ -69,9 +69,9 @@ export function HowItWorks() {
 
         {/* Closer */}
         <p className="animate-on-scroll text-center text-foreground/70 text-base md:text-lg leading-relaxed max-w-xl mx-auto">
-          Sem cadastro. Sem app. Sem comunidade.
+          Sem espera. Sem app. Sem comunidade.
           <br />
-          <span className="text-gold font-medium">Só o protocolo que você precisa pra treinar segunda-feira.</span>
+          <span className="text-gold font-medium">Só o método que você precisa pra treinar segunda-feira.</span>
         </p>
       </div>
     </section>

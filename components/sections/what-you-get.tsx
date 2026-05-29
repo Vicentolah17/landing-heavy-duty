@@ -5,12 +5,22 @@ import Image from 'next/image'
 import { Check } from 'lucide-react'
 
 const features = [
-  'Plano de treino montado pro seu nível e objetivo',
-  'Divisão semanal completa — Treino A e Treino B alternados',
-  'Exercícios com séries, repetições, cadência e técnica (pré-exaustão aplicada)',
+  'Acesso imediato após a compra. Tudo liberado na sua área de membros Hotmart. Sem espera. Sem app. Sem etapa intermediária.',
+  '6 protocolos progressivos — do iniciante ao avançado, massa e força',
+  'Divisão semanal estruturada — Treino A e Treino B alternados',
+  'Exercícios com séries, repetições, cadência e técnica de pré-exaustão',
   'Tabela de progressão de carga semana a semana',
   'Página dedicada ao aquecimento — anti-lesão pra quem treina pesado',
   'Protocolo de break-in nas duas primeiras semanas (adaptação de tendões)',
+]
+
+const protocols = [
+  { code: 'T1', level: 'Iniciante', goal: 'Massa' },
+  { code: 'T2', level: 'Iniciante', goal: 'Força' },
+  { code: 'T3', level: 'Intermediário', goal: 'Massa' },
+  { code: 'T4', level: 'Intermediário', goal: 'Força' },
+  { code: 'T5', level: 'Avançado', goal: 'Massa' },
+  { code: 'T6', level: 'Avançado', goal: 'Força' },
 ]
 
 export function WhatYouGet() {
@@ -39,15 +49,15 @@ export function WhatYouGet() {
       <div className="container mx-auto px-4 max-w-3xl">
         {/* H2 */}
         <h2 className="animate-on-scroll font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground text-center mb-4 md:mb-6 leading-tight">
-          O que chega no seu{' '}
-          <span className="text-gold">email.</span>
+          O método completo.{' '}
+          <span className="text-gold">Acesso imediato.</span>
         </h2>
 
         {/* Subhead */}
         <p className="animate-on-scroll text-center text-foreground/70 text-base md:text-lg max-w-2xl mx-auto mb-12 md:mb-14 leading-relaxed">
-          Não é planilha solta. Não é catálogo.
+          6 protocolos progressivos. Do iniciante ao avançado.
           <br />
-          É o protocolo certo pro seu nível, aplicado direto.
+          Você navega entre eles conforme dominar cada fase.
         </p>
 
         {/* Features list */}
@@ -66,6 +76,33 @@ export function WhatYouGet() {
           </ul>
         </div>
 
+        {/* Grid T1–T6 */}
+        <div className="animate-on-scroll mb-16">
+          <p className="text-center text-gold text-xs tracking-[0.25em] uppercase font-semibold mb-6">
+            Os 6 protocolos do método
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
+            {protocols.map((p) => (
+              <div
+                key={p.code}
+                className="flex items-center gap-4 border border-gold/20 rounded-lg px-5 py-4 hover:border-gold/40 transition-colors"
+              >
+                <span className="font-heading text-2xl md:text-3xl text-gold leading-none w-10 flex-shrink-0">
+                  {p.code}
+                </span>
+                <div>
+                  <p className="text-foreground font-medium text-sm md:text-base leading-tight">
+                    {p.level}
+                  </p>
+                  <p className="text-foreground/50 text-xs md:text-sm mt-0.5">
+                    {p.goal}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Preview spread */}
         <div className="animate-on-scroll mb-16">
           {/* Label */}
@@ -73,7 +110,7 @@ export function WhatYouGet() {
             Veja por dentro
           </p>
           <p className="text-center text-foreground/60 text-sm mb-10 leading-relaxed">
-            Não é imagem genérica. É a planilha real que chega no seu email.
+            Não é imagem genérica. É o método real que você acessa na hora.
           </p>
 
           {/* Spread de imagens */}
@@ -146,15 +183,15 @@ export function WhatYouGet() {
           </p>
         </div>
 
-        {/* Bloco de entrega */}
+        {/* Bloco de acesso */}
         <div className="animate-on-scroll bg-card/50 border border-gold/15 rounded-lg p-6 md:p-8 mb-10">
           <p className="text-foreground text-lg md:text-xl font-semibold mb-3">
-            Entrega em até 24h.
+            Acesso imediato após a compra.
           </p>
           <p className="text-foreground/80 text-base md:text-lg leading-relaxed">
-            Você responde um formulário curto por email após a compra.
+            Tudo liberado na sua área de membros Hotmart.
             <br />
-            Eu monto seu plano e envio.
+            Sem espera, sem formulário, sem etapa intermediária.
           </p>
         </div>
 

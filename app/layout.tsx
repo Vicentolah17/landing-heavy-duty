@@ -17,12 +17,12 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Heavy Duty Method | Treine Menos. Cresça Mais.',
-  description: 'O Sistema Heavy Duty de Mike Mentzer — o único método de treino baseado em ciência real. Planilha de treino personalizada por apenas R$37.',
-  keywords: ['heavy duty', 'mike mentzer', 'treino intenso', 'hipertrofia', 'musculação', 'bodybuilding'],
+  title: 'Protocolo BRUTO | Heavy Duty Brasil',
+  description: 'Método completo de treino de alta intensidade. 6 protocolos progressivos inspirados nos princípios da golden era do fisiculturismo. Acesso imediato por R$ 37.',
+  keywords: ['protocolo bruto', 'treino alta intensidade', 'heavy duty brasil', 'hipertrofia', 'musculação', 'mike mentzer', 'golden era'],
   openGraph: {
-    title: 'Heavy Duty Method | Treine Menos. Cresça Mais.',
-    description: 'O Sistema Heavy Duty de Mike Mentzer — o único método de treino baseado em ciência real.',
+    title: 'Protocolo BRUTO | Heavy Duty Brasil',
+    description: 'Método completo de treino de alta intensidade. 3 treinos por semana, 30 minutos, até a falha. Inspirado nos princípios da golden era do fisiculturismo.',
     type: 'website',
   },
 }

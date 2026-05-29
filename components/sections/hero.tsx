@@ -89,7 +89,7 @@ export function Hero() {
               className="bg-gold hover:bg-gold/90 text-primary-foreground font-heading text-lg md:text-xl px-8 py-6 h-auto rounded-lg shadow-lg shadow-gold/20 transition-all hover:shadow-xl hover:shadow-gold/30 hover:scale-105"
             >
               <a 
-                href="https://pay.hotmart.com/M105294904O"
+                href="https://pay.hotmart.com/M105294904O?checkoutMode=10"
                 onClick={handleCheckoutClick}
               >
                 COMEÇAR O PROTOCOLO — R$ 37
@@ -99,7 +99,7 @@ export function Hero() {
 
           {/* Microcopy abaixo do CTA */}
           <p className="animate-on-scroll text-foreground/60 text-sm md:text-base max-w-md mb-8 leading-relaxed">
-            Após a compra, você responde um formulário rápido por email. Montamos seu plano e enviamos direto pra você
+            Acesso imediato à biblioteca completa do método direto na área de membros Hotmart.
           </p>
 
           {/* Trust badges */}
@@ -110,7 +110,7 @@ export function Hero() {
             </span>
             <span className="flex items-start gap-2">
               <Check className="w-4 h-4 text-gold flex-shrink-0 mt-0.5" />
-              Plano em até 24h
+              Acesso Imediato
             </span>
             <span className="flex items-start gap-2">
               <Check className="w-4 h-4 text-gold flex-shrink-0 mt-0.5" />

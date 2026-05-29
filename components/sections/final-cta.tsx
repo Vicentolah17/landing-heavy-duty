@@ -57,7 +57,7 @@ export function FinalCTA() {
         {/* CTA Button Corrigido */}
         <div className="animate-on-scroll mb-5">
           <a
-            href="https://pay.hotmart.com/M105294904O"
+            href="https://pay.hotmart.com/M105294904O?checkoutMode=10"
             target="_blank"
             rel="noopener noreferrer"
             onClick={handleCheckoutClick}
@@ -72,9 +72,9 @@ export function FinalCTA() {
         </p>
 
         <p className="animate-on-scroll text-foreground/60 text-sm md:text-base max-w-md mx-auto leading-relaxed">
-          Após a compra, você responde um formulário curto por email.
+          Acesso imediato à biblioteca completa. 
           <br />
-          Em até 24h, enviamos seu protocolo montado.
+          6 protocolos progressivos, você escolhe como começar.
         </p>
       </div>
     </section>
