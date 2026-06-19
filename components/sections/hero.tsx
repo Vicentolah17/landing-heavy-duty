@@ -4,9 +4,11 @@ import { useEffect, useRef } from 'react'
 import { Button } from '@/components/ui/button'
 import { Check } from 'lucide-react'
 import { HeavyDutyEvents } from '@/lib/meta-pixel'
+import { useUTMCheckoutLink } from '@/hooks/use-utm-checkout-link'
 
 export function Hero() {
   const sectionRef = useRef<HTMLElement>(null)
+  const checkoutUrl = useUTMCheckoutLink()
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -88,8 +90,8 @@ export function Hero() {
               size="lg"
               className="bg-gold hover:bg-gold/90 text-primary-foreground font-heading text-lg md:text-xl px-8 py-6 h-auto rounded-lg shadow-lg shadow-gold/20 transition-all hover:shadow-xl hover:shadow-gold/30 hover:scale-105"
             >
-              <a 
-                href="https://pay.hotmart.com/M105294904O?checkoutMode=10"
+              <a
+                href={checkoutUrl}
                 onClick={handleCheckoutClick}
               >
                 COMEÇAR O PROTOCOLO — R$ 37

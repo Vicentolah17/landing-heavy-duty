@@ -2,9 +2,11 @@
 
 import { useEffect, useRef } from 'react'
 import { HeavyDutyEvents } from '@/lib/meta-pixel'
+import { useUTMCheckoutLink } from '@/hooks/use-utm-checkout-link'
 
 export function FinalCTA() {
   const sectionRef = useRef<HTMLElement>(null)
+  const checkoutUrl = useUTMCheckoutLink()
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -57,7 +59,7 @@ export function FinalCTA() {
         {/* CTA Button Corrigido */}
         <div className="animate-on-scroll mb-5">
           <a
-            href="https://pay.hotmart.com/M105294904O?checkoutMode=10"
+            href={checkoutUrl}
             target="_blank"
             rel="noopener noreferrer"
             onClick={handleCheckoutClick}
