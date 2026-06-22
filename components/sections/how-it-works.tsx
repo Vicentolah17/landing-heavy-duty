@@ -5,7 +5,7 @@ import { useEffect, useRef } from 'react'
 const steps = [
   {
     number: '1',
-    text: 'Compra R$ 37 pela Hotmart (Pix ou cartão).',
+    text: 'Compra R$ 37 pela Hotmart (Pix, cartão ou boleto).',
   },
   {
     number: '2',
@@ -13,7 +13,7 @@ const steps = [
   },
   {
     number: '3',
-    text: 'Você escolhe o protocolo certo pro seu momento e começa a treinar.',
+    text: 'Você escolhe o protocolo certo pro seu momento e objetivo — e já sai executando.',
   },
 ]
 
@@ -69,9 +69,9 @@ export function HowItWorks() {
 
         {/* Closer */}
         <p className="animate-on-scroll text-center text-foreground/70 text-base md:text-lg leading-relaxed max-w-xl mx-auto">
-          Sem espera. Sem app. Sem comunidade.
+          Sem firula. Sem app. Sem comunidade.
           <br />
-          <span className="text-gold font-medium">Só o método que você precisa pra treinar segunda-feira.</span>
+          <span className="text-gold font-medium">Só o método que você precisa pra parar de treinar fofo já na segunda.</span>
         </p>
       </div>
     </section>

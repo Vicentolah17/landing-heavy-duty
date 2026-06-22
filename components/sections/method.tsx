@@ -14,13 +14,13 @@ const principles = [
     icon: Timer,
     title: 'DURAÇÃO',
     rule: '30 minutos. Não mais que isso.',
-    mechanism: 'Intensidade real esgota o sistema nervoso rápido. Se o treino passou de 30 min, a intensidade não foi alta.',
+    mechanism: 'Intensidade real esgota o sistema nervoso rápido. Se o treino passou de 30 min, a intensidade não foi alta — você perdeu tempo.',
   },
   {
     icon: CalendarDays,
     title: 'FREQUÊNCIA',
     rule: '4 a 7 dias de descanso entre cada sessão.',
-    mechanism: 'Músculo cresce na recuperação, não na academia. Treinar antes disso é treinar em cima de fadiga.',
+    mechanism: 'Treino é estímulo, recuperação é crescimento. Treinar antes disso é perda de tempo e acúmulo de fadiga.',
   },
 ]
 
@@ -60,9 +60,9 @@ export function Method() {
 
         {/* Subhead */}
         <p className="animate-on-scroll text-center text-foreground/80 text-base md:text-lg max-w-2xl mx-auto mb-14 md:mb-16 leading-relaxed">
-          O que Mentzer formulou nos anos 80 não é teoria.
+          O que Mentzer dizia nos anos 80 não era historinha.
           <br />
-          É como o corpo responde — e a academia moderna esqueceu.
+          É biologia prática de como o corpo responde — e a academia moderna esqueceu.
         </p>
 
         {/* Princípios — grid 3 colunas */}

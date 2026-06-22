@@ -4,11 +4,12 @@ import { useEffect, useRef } from 'react'
 import { Check } from 'lucide-react'
 
 const bullets = [
-  'Você treina há anos e o corpo parou de mudar',
-  'Você cansou de método genérico e quer base técnica',
-  'Você tem pouco tempo e precisa de treino que respeite isso',
-  'Você quer entender o porquê, não só seguir uma rotina',
+  'Você treina há anos e o corpo não responde mais como antes',
+  'Você tem trabalho, família, e não cabe mais 1h na academia',
+  'Você quer prática direta — e entender o porquê de cada coisa',
+  'Você sabe que esforço breve e intenso supera horas de moderado',
   'Você está disposto a treinar pesado de verdade — não muito',
+  'Você odeia sair da academia agoniado pensando que se esgotou à toa',
 ]
 
 export function ForWhom() {
@@ -63,7 +64,7 @@ export function ForWhom() {
 
         {/* Closing text */}
         <p className="animate-on-scroll text-center italic text-foreground/80 text-base md:text-lg max-w-2xl mx-auto">
-          Se você se identificou com pelo menos 3 desses pontos, o Heavy Duty Method foi feito pra você.
+          Se 3 desses descrevem seu cenário, o protocolo é pra você.
         </p>
       </div>
     </section>

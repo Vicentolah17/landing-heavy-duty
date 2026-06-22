@@ -5,9 +5,9 @@ import Image from 'next/image'
 import { Check } from 'lucide-react'
 
 const features = [
-  'Acesso imediato após a compra. Tudo liberado na sua área de membros Hotmart. Sem espera. Sem app. Sem etapa intermediária.',
-  '6 protocolos progressivos — do iniciante ao avançado, massa e força',
-  'Divisão semanal estruturada — Treino A e Treino B alternados',
+  'Acesso imediato após a compra na área de membros Hotmart',
+  '6 protocolos progressivos — do iniciante ao avançado, focados em massa ou força',
+  'Divisão semanal estruturada e pronta — Treino A e Treino B alternados',
   'Exercícios com séries, repetições, cadência e técnica de pré-exaustão',
   'Tabela de progressão de carga semana a semana',
   'Página dedicada ao aquecimento — anti-lesão pra quem treina pesado',
@@ -110,7 +110,7 @@ export function WhatYouGet() {
             Veja por dentro
           </p>
           <p className="text-center text-foreground/60 text-sm mb-10 leading-relaxed">
-            Não é imagem genérica. É o método real que você acessa na hora.
+            Não é imagem genérica. É o método real, exatamente como você vai acessar na área de membros.
           </p>
 
           {/* Spread de imagens */}
@@ -189,9 +189,9 @@ export function WhatYouGet() {
             Acesso imediato após a compra.
           </p>
           <p className="text-foreground/80 text-base md:text-lg leading-relaxed">
-            Tudo liberado na sua área de membros Hotmart.
+            Tudo liberado na sua área de membros Hotmart — evolua no seu ritmo.
             <br />
-            Sem espera, sem formulário, sem etapa intermediária.
+            Sem espera. Sem app. Sem enrolação.
           </p>
         </div>
 

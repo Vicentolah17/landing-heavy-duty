@@ -53,7 +53,7 @@ export function FinalCTA() {
           Ou aplica o protocolo e descobre como o corpo responde.
         </p>
         <p className="animate-on-scroll text-foreground/80 text-lg md:text-xl mb-10 leading-relaxed">
-          Ou continua treinando do mesmo jeito.
+          Ou continua treinando fofo do mesmo jeito.
         </p>
 
         {/* CTA Button Corrigido */}

@@ -77,7 +77,7 @@ export function Hero() {
           {/* Subtext */}
           <p className="animate-on-scroll text-foreground/80 text-base md:text-lg max-w-xl mb-10 leading-relaxed space-y-2">
             A geração que construiu o fisiculturismo nos anos 80 já tinha a resposta.
-            A indústria do fitness te empurrou volume pra te manter pagando academia.
+            A indústria fitness te empurrou volume para manter você gastando tempo e dinheiro.
             <br />
             <br />
             Protocolo BRUTO é a interpretação brasileira desses princípios — pro homem 40+ que não tem mais tempo a perder com treino que não funciona.
@@ -101,7 +101,7 @@ export function Hero() {
 
           {/* Microcopy abaixo do CTA */}
           <p className="animate-on-scroll text-foreground/60 text-sm md:text-base max-w-md mb-8 leading-relaxed">
-            Acesso imediato à biblioteca completa do método direto na área de membros Hotmart.
+            Acesso imediato à biblioteca completa do método. Tudo na sua área de membros Hotmart.
           </p>
 
           {/* Trust badges */}

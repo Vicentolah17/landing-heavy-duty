@@ -14,7 +14,7 @@ const painPoints = [
   },
   {
     icon: Dumbbell,
-    text: '"Saio da academia exausto.\nSem ter movido nada de verdade."',
+    text: '"Saio da academia acabado,\nmas ainda sinto que o treino foi meia boca."',
   },
 ]
 
@@ -70,7 +70,7 @@ export function Problem() {
         {/* Transition / Proof block */}
         <div className="animate-on-scroll max-w-3xl mx-auto text-center space-y-4">
           <p className="text-foreground/90 text-lg md:text-xl leading-relaxed">
-            Os princípios que reinventaram o fisiculturismo nos anos 80 diziam o oposto do que a academia moderna te ensinou.
+            Nos anos 80, uma geração de campeões chocou o mundo fazendo o oposto do que a indústria fitness moderna te incentiva.
           </p>
 
           <p className="text-foreground text-xl md:text-2xl font-semibold leading-relaxed">
